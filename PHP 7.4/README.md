@@ -2,7 +2,7 @@
 * [Typed properties](#typed-properties)
 * [Arrow functions](#arrow-functions)
 
-### Typed properties
+## Typed properties
 Class properties now support type declarations.
 ```php
 class User {
@@ -10,5 +10,5 @@ class User {
     public string $name;
 }
 ```
-### Arrow functions
+## Arrow functions
 Arrow functions provide a shorthand syntax for defining functions with implicit by-value scope binding.
