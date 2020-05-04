@@ -1,4 +1,4 @@
-##PHP 7.4 most interesting features
+## PHP 7.4 most interesting features
 * [Typed properties](#Typed properties)
 * [Arrow functions](#Arrow functions)
 
