@@ -1,6 +1,6 @@
 ## PHP 7.4 most interesting features
-* [Typed properties](#Typed properties)
-* [Arrow functions](#Arrow functions)
+* [Typed properties](#typed-properties)
+* [Arrow functions](#arrow-functions)
 
 ### Typed properties
 Class properties now support type declarations.
