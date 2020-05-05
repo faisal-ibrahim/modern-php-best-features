@@ -2,6 +2,7 @@
 * [Typed properties](#typed-properties)
 * [Arrow functions](#arrow-functions)
 * [Limited return type covariance and argument type contravariance](#limited-return-type-covariance-and-argument-type-contravariance)
+* [Null coalescing assignment operator](#null-coalescing-assignment-operator)
 
 ## Typed properties
 Class properties now support type declarations.
@@ -43,3 +44,4 @@ class ChildProducer extends Producer {
     public function method(): B {}
 }
 ```
+## Null coalescing assignment operator (??=)
