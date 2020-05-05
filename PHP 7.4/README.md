@@ -1,6 +1,7 @@
 ## PHP 7.4 most interesting features
 * [Typed properties](#typed-properties)
 * [Arrow functions](#arrow-functions)
+* [Limited return type covariance and argument type contravariance](#limited-return-type-covariance-and-argument-type-contravariance)
 
 ## Typed properties
 Class properties now support type declarations.
@@ -29,4 +30,16 @@ var_dump($fn1(3)); // output: int(4)
 $factor = 10;
 $nums = array_map(fn($n) => $n * $factor, [1, 2, 3, 4]);
 print_r($nums); // Output: [10, 20, 30, 40]
+```
+## Limited return type covariance and argument type contravariance
+```php
+class A {}
+class B extends A {}
+
+class Producer {
+    public function method(): A {}
+}
+class ChildProducer extends Producer {
+    public function method(): B {}
+}
 ```
