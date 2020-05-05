@@ -44,6 +44,7 @@ class ChildProducer extends Producer {
     public function method(): B {}
 }
 ```
+Full variance support is only available if autoloading is used. Inside a single file only non-cyclic type references are possible, because all classes need to be available before they are referenced.
 ## Null coalescing assignment operator
 Coalesce equal or `??=` operator is an assignment operator. If the left parameter is null, assigns the value of the right parameter to the left one. If the value is not null, nothing is done.
 ```php
