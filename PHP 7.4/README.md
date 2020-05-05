@@ -44,4 +44,16 @@ class ChildProducer extends Producer {
     public function method(): B {}
 }
 ```
-## Null coalescing assignment operator (??=)
+## Null coalescing assignment operator
+Coalesce equal or `??=` operator is an assignment operator. If the left parameter is null, assigns the value of the right parameter to the left one. If the value is not null, nothing is done.
+```php
+$array['key'] ??= computeDefault();
+
+// is roughly equivalent to
+if (!isset($array['key'])) {
+    $array['key'] = computeDefault();
+}
+```
+
+## Reference
+* **Modern PHP 7.4 Features** ([php.net](https://www.php.net/manual/en/migration74.new-features.php))
